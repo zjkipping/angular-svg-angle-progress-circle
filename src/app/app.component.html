@@ -1,0 +1,29 @@
+<div class="flex-container">
+  <div>
+    <p class="center-text">RxJS - Staggered Signals</p>
+    <app-angle-progress-rxjs [startAngle]="start" [endAngle]="end"
+      [currentAngle]="(angleProgressStaggered | async) ?? start">
+    </app-angle-progress-rxjs>
+  </div>
+
+  <div>
+    <p class="center-text">RxJS - Smooth Signals</p>
+    <app-angle-progress-rxjs [startAngle]="start" [endAngle]="end"
+      [currentAngle]="(angleProgressSmooth | async) ?? start">
+    </app-angle-progress-rxjs>
+  </div>
+</div>
+
+<div class="flex-container">
+  <div>
+    <p class="center-text">CSS - Staggered Signals</p>
+    <app-angle-progress-css [start]="start" [end]="end" [current]="(angleProgressStaggered | async) ?? start">
+    </app-angle-progress-css>
+  </div>
+
+  <div>
+    <p class="center-text">CSS - Smooth Signals</p>
+    <app-angle-progress-css [start]="start" [end]="end" [current]="(angleProgressSmooth | async) ?? start">
+    </app-angle-progress-css>
+  </div>
+</div>

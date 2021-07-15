@@ -1,0 +1,28 @@
+#angleProgressSvg {
+  height: 200px;
+  width: 200px;
+}
+
+.angleText {
+  font-size: 12px;
+  fill: black;
+  text-anchor: middle;
+}
+
+.progressBackgroundArc {
+  fill: lightgrey;
+  stroke: teal;
+  stroke-width: 2px;
+}
+
+.progressArc {
+  fill: teal;
+  stroke: rgb(1, 88, 88);
+  stroke-width: 2px;
+}
+
+.voidArc {
+  fill: white;
+  stroke: grey;
+  stroke-width: 2px;
+}

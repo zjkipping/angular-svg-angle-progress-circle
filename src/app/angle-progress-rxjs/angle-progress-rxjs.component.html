@@ -1,0 +1,14 @@
+<svg id="angleProgressSvg" *ngIf="renderArcs">
+  <path class="progressBackgroundArc" [attr.d]="backgroundArc?.d" />
+  <path class="voidArc" [attr.d]="voidArc?.d" />
+
+  <path *ngIf="progressArc" class="progressArc" [attr.d]="progressArc?.d" />
+
+  <text class="angleText" [attr.x]="startAngleTextPosition.x" [attr.y]="startAngleTextPosition.y">
+    {{startAngle}}&#176;
+  </text>
+
+  <text class="angleText" [attr.x]="endAngleTextPosition.x" [attr.y]="endAngleTextPosition.y">
+    {{endAngle}}&#176;
+  </text>
+</svg>

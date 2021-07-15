@@ -1,0 +1,12 @@
+<svg height="100%" width="100%" viewBox="0 0 100 100">
+  <circle class="donut-fill" cx="50" cy="50" r="40" />
+
+  <circle class="progress progress-shadow" cx="50" cy="50" r="40" />
+  <circle class="progress" cx="50" cy="50" r="40" />
+
+  <circle class="outer" cx="50" cy="50" r="49" />
+  <circle class="inner" cx="50" cy="50" r="31" />
+
+  <text [attr.x]="startTextCoords.x" [attr.y]="startTextCoords.y">{{start}}&#176;</text>
+  <text [attr.x]="endTextCoords.x" [attr.y]="endTextCoords.y">{{end}}&#176;</text>
+</svg>
